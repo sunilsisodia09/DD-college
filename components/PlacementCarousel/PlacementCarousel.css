@@ -1,0 +1,648 @@
+/* =========================================================
+   D.D. COLLEGE
+   PLACEMENT CAROUSEL
+========================================================= */
+
+.placement-section {
+  width: 100%;
+
+  padding: 75px 0 85px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.placement-header {
+  width: 100%;
+  max-width: 1150px;
+
+  margin: 0 auto 38px;
+
+  padding: 0 20px;
+
+  box-sizing: border-box;
+}
+
+.placement-heading {
+  max-width: 720px;
+}
+
+.placement-eyebrow {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #c89b18;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+.placement-heading h2 {
+  margin: 0;
+
+  color: #111111;
+
+  font-size: clamp(30px, 3.5vw, 44px);
+
+  line-height: 1.12;
+
+  font-weight: 500;
+}
+
+.placement-heading h2 strong {
+  font-weight: 800;
+}
+
+.placement-heading p {
+  max-width: 560px;
+
+  margin: 15px 0 0;
+
+  color: #777777;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   CAROUSEL AREA
+========================================================= */
+
+.placement-carousel-area {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1260px;
+
+  margin: 0 auto;
+
+  padding: 0 50px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   SLIDER
+========================================================= */
+
+.placement-slider {
+  width: 100%;
+
+  display: flex;
+
+  gap: 16px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 0;
+
+  scrollbar-width: none;
+
+  overscroll-behavior-x: contain;
+
+  box-sizing: border-box;
+}
+
+.placement-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================================================
+   CARD
+   DESKTOP = 3 CARDS
+========================================================= */
+
+.placement-card {
+  position: relative;
+
+  width: calc(
+    (100% - 32px) / 3
+  );
+
+  min-width: calc(
+    (100% - 32px) / 3
+  );
+
+  flex: 0 0 calc(
+    (100% - 32px) / 3
+  );
+
+  height: 455px;
+
+  overflow: hidden;
+
+  border-radius: 5px;
+
+  background: #222222;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.placement-student-image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  display: block;
+}
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.placement-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.08) 0%,
+      rgba(0, 0, 0, 0.05) 28%,
+      rgba(0, 0, 0, 0.18) 60%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.placement-content {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  padding: 25px 27px;
+
+  color: #ffffff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   COMPANY
+========================================================= */
+
+.placement-company {
+  color: #ffffff;
+
+  font-size: 19px;
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+}
+
+.amazon-company {
+  font-size: 23px;
+
+  text-transform: lowercase;
+
+  letter-spacing: -1px;
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.placement-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin-top: 15px;
+
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* =========================================================
+   NAME
+========================================================= */
+
+.placement-student-name {
+  max-width: 190px;
+
+  margin-top: 24px;
+
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 23px;
+
+  line-height: 1.05;
+
+  font-style: italic;
+}
+
+/* =========================================================
+   ROLE
+========================================================= */
+
+.placement-role {
+  margin-top: 9px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   PACKAGE
+========================================================= */
+
+.placement-package-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin-top: 30px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.placement-package-label {
+  margin-top: 16px;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.placement-package {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 5px;
+
+  margin-top: 3px;
+}
+
+.placement-package strong {
+  color: #ffffff;
+
+  font-size: 34px;
+
+  line-height: 1;
+
+  font-weight: 900;
+}
+
+.placement-package span {
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.placement-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  z-index: 20;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d0d0d0;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #555555;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.08);
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+
+  appearance: none;
+
+  -webkit-appearance: none;
+
+  outline: none;
+}
+
+.placement-arrow span {
+  display: block;
+
+  font-size: 30px;
+
+  font-weight: 300;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+.placement-arrow-left {
+  left: 0;
+}
+
+.placement-arrow-right {
+  right: 0;
+}
+
+.placement-arrow:hover {
+  background: #f5c542;
+
+  border-color: #f5c542;
+
+  color: #111111;
+}
+
+.placement-arrow:active {
+  transform: translateY(-50%) scale(0.94);
+}
+
+/* =========================================================
+   LARGE SCREEN
+========================================================= */
+
+@media (min-width: 1300px) {
+
+  .placement-carousel-area {
+    max-width: 1260px;
+  }
+
+  .placement-card {
+    height: 470px;
+  }
+}
+
+/* =========================================================
+   TABLET
+   2 CARDS
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .placement-section {
+    padding: 65px 0 70px;
+  }
+
+  .placement-carousel-area {
+    padding: 0 45px;
+  }
+
+  .placement-card {
+    width: calc(
+      (100% - 16px) / 2
+    );
+
+    min-width: calc(
+      (100% - 16px) / 2
+    );
+
+    flex-basis: calc(
+      (100% - 16px) / 2
+    );
+
+    height: 430px;
+  }
+
+  .placement-content {
+    padding: 23px;
+  }
+
+  .placement-package strong {
+    font-size: 31px;
+  }
+
+  .placement-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   1 CARD
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .placement-section {
+    padding: 55px 0 60px;
+  }
+
+  .placement-header {
+    padding: 0 18px;
+
+    margin-bottom: 30px;
+  }
+
+  .placement-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .placement-heading h2 {
+    font-size: 31px;
+  }
+
+  .placement-heading p {
+    font-size: 13px;
+  }
+
+  .placement-carousel-area {
+    padding: 0 39px;
+  }
+
+  .placement-card {
+    width: 100%;
+
+    min-width: 100%;
+
+    flex-basis: 100%;
+
+    height: 400px;
+  }
+
+  .placement-content {
+    padding: 21px;
+  }
+
+  .placement-company {
+    font-size: 18px;
+  }
+
+  .amazon-company {
+    font-size: 21px;
+  }
+
+  .placement-student-name {
+    margin-top: 21px;
+
+    font-size: 21px;
+  }
+
+  .placement-package strong {
+    font-size: 29px;
+  }
+
+  .placement-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .placement-arrow span {
+    font-size: 26px;
+  }
+
+  .placement-arrow-left {
+    left: 1px;
+  }
+
+  .placement-arrow-right {
+    right: 1px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .placement-header {
+    padding: 0 15px;
+  }
+
+  .placement-heading h2 {
+    font-size: 27px;
+  }
+
+  .placement-carousel-area {
+    padding: 0 35px;
+  }
+
+  .placement-card {
+    height: 375px;
+  }
+
+  .placement-content {
+    padding: 19px;
+  }
+
+  .placement-student-name {
+    font-size: 19px;
+  }
+
+  .placement-package strong {
+    font-size: 27px;
+  }
+
+  .placement-arrow {
+    width: 33px;
+    height: 33px;
+  }
+
+  .placement-arrow span {
+    font-size: 24px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 320px) {
+
+  .placement-carousel-area {
+    padding: 0 32px;
+  }
+
+  .placement-card {
+    height: 355px;
+  }
+
+  .placement-content {
+    padding: 17px;
+  }
+
+  .placement-heading h2 {
+    font-size: 25px;
+  }
+
+  .placement-student-name {
+    font-size: 18px;
+  }
+
+  .placement-package strong {
+    font-size: 25px;
+  }
+
+  .placement-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .placement-arrow span {
+    font-size: 22px;
+  }
+}

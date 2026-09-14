@@ -1,0 +1,302 @@
+.logo-marquee {
+  width: 100%;
+  background: #050816;
+  color: #ffffff;
+
+  padding: 70px 0;
+
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.logo-marquee-title {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto 45px;
+
+  padding: 0 20px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.logo-marquee-title span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #f5c542;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.logo-marquee-title h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(25px, 4vw, 40px);
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+/* =========================================================
+   MARQUEE WRAPPER
+========================================================= */
+
+.logo-marquee-wrapper {
+  width: 100%;
+
+  overflow: hidden;
+
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   FADE ON LEFT / RIGHT
+========================================================= */
+
+.logo-marquee-wrapper::before,
+.logo-marquee-wrapper::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  width: 120px;
+
+  z-index: 5;
+
+  pointer-events: none;
+}
+
+.logo-marquee-wrapper::before {
+  left: 0;
+
+  background: linear-gradient(
+    to right,
+    #050816,
+    transparent
+  );
+}
+
+.logo-marquee-wrapper::after {
+  right: 0;
+
+  background: linear-gradient(
+    to left,
+    #050816,
+    transparent
+  );
+}
+
+/* =========================================================
+   MOVING TRACK
+========================================================= */
+
+.logo-marquee-track {
+  display: flex;
+
+  width: max-content;
+
+  animation: logoMarquee 25s linear infinite;
+
+  will-change: transform;
+}
+
+/* =========================================================
+   LOGO GROUP
+========================================================= */
+
+.logo-marquee-group {
+  display: flex;
+
+  align-items: center;
+
+  flex-shrink: 0;
+
+  gap: 35px;
+
+  padding-right: 35px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   LOGO ITEM
+========================================================= */
+
+.logo-item {
+  width: 180px;
+  height: 90px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px 25px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(245, 197, 66, 0.2);
+
+  border-radius: 8px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   LOGO IMAGE
+========================================================= */
+
+.logo-item img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* =========================================================
+   CONTINUOUS ANIMATION
+========================================================= */
+
+@keyframes logoMarquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.333333%);
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .logo-marquee {
+    padding: 60px 0;
+  }
+
+  .logo-marquee-title {
+    margin-bottom: 35px;
+  }
+
+  .logo-marquee-group {
+    gap: 25px;
+    padding-right: 25px;
+  }
+
+  .logo-item {
+    width: 155px;
+    height: 80px;
+
+    padding: 15px 20px;
+  }
+
+  .logo-marquee-track {
+    animation-duration: 22s;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .logo-marquee {
+    padding: 50px 0;
+  }
+
+  .logo-marquee-title {
+    margin-bottom: 30px;
+  }
+
+  .logo-marquee-title span {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .logo-marquee-title h2 {
+    font-size: 25px;
+  }
+
+  .logo-marquee-group {
+    gap: 18px;
+    padding-right: 18px;
+  }
+
+  .logo-item {
+    width: 135px;
+    height: 70px;
+
+    padding: 12px 18px;
+
+    border-radius: 7px;
+  }
+
+  .logo-marquee-track {
+    animation-duration: 18s;
+  }
+
+  .logo-marquee-wrapper::before,
+  .logo-marquee-wrapper::after {
+    width: 60px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .logo-marquee {
+    padding: 45px 0;
+  }
+
+  .logo-marquee-title {
+    margin-bottom: 25px;
+  }
+
+  .logo-marquee-title h2 {
+    font-size: 22px;
+  }
+
+  .logo-marquee-group {
+    gap: 15px;
+    padding-right: 15px;
+  }
+
+  .logo-item {
+    width: 120px;
+    height: 65px;
+
+    padding: 10px 15px;
+  }
+
+  .logo-marquee-track {
+    animation-duration: 16s;
+  }
+}

@@ -1,0 +1,352 @@
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+  --black: #080808;
+  --black-light: #111111;
+
+  --yellow: #f4c400;
+  --yellow-dark: #d6a900;
+
+  --green: #20d56b;
+
+  --white: #ffffff;
+  --grey: #999999;
+
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.landing-page {
+  width: 100%;
+  overflow: hidden;
+  background: var(--black);
+}
+
+.container {
+  width: min(1380px, 92%);
+  margin: auto;
+}
+
+.section-label {
+  margin-bottom: 22px;
+
+  color: var(--yellow);
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 2.5px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-section {
+  padding: 140px 0;
+
+  background: #0b0b0b;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+}
+
+.about-title h2 {
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 82px);
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+
+  font-weight: 950;
+}
+
+.about-title h2 span {
+  color: var(--yellow);
+}
+
+.about-content {
+  max-width: 620px;
+}
+
+.about-content p {
+  margin: 0 0 22px;
+
+  color: #999999;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.green-link {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  color: var(--green);
+
+  font-size: 12px;
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+  transition: 0.25s ease;
+}
+
+.green-link:hover {
+  color: var(--yellow);
+}
+
+
+/* =========================================================
+   WHY
+========================================================= */
+
+.why-section {
+  padding: 140px 0;
+
+  background: #080808;
+}
+
+.large-heading {
+  margin: 0 0 75px;
+
+  font-size: clamp(48px, 6vw, 82px);
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+
+  font-weight: 950;
+}
+
+.large-heading span {
+  color: var(--yellow);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid var(--border);
+}
+
+.why-card {
+  min-height: 270px;
+
+  padding: 30px;
+
+  border-right: 1px solid var(--border);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.why-card:last-child {
+  border-right: none;
+}
+
+.why-card:hover {
+  background: var(--green);
+  color: #000000;
+
+  transform: translateY(-5px);
+}
+
+.why-card span {
+  color: var(--yellow);
+
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.why-card:hover span {
+  color: #000000;
+}
+
+.why-card h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+
+  font-size: 19px;
+}
+
+.why-card p {
+  margin: 0;
+
+  color: #888888;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+.why-card:hover p {
+  color: #111111;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.admission-cta {
+  padding: 140px 20px;
+
+  background: var(--yellow);
+
+  color: #000000;
+
+  text-align: center;
+}
+
+.cta-content > span {
+  font-size: 11px;
+  font-weight: 950;
+
+  letter-spacing: 3px;
+}
+
+.cta-content h2 {
+  margin: 25px 0;
+
+  font-size: clamp(55px, 9vw, 120px);
+
+  line-height: 0.84;
+
+  letter-spacing: -6px;
+
+  font-weight: 950;
+}
+
+.cta-content h2 strong {
+  color: #ffffff;
+}
+
+.cta-content p {
+  max-width: 500px;
+
+  margin: 0 auto 35px;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 54px;
+
+  padding: 0 30px;
+
+  background: #000000;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 900;
+
+  transition: 0.25s ease;
+}
+
+.cta-button:hover {
+  background: var(--green);
+  color: #000000;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .about-grid {
+    gap: 50px;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-card:nth-child(2) {
+    border-right: none;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .about-section,
+  .why-section {
+    padding: 90px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .about-title h2,
+  .large-heading {
+    letter-spacing: -3px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-card {
+    min-height: auto;
+
+    padding: 28px 0;
+
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .why-card:last-child {
+    border-bottom: none;
+  }
+
+  .why-card h3 {
+    margin-top: 40px;
+  }
+
+  .admission-cta {
+    padding: 95px 20px;
+  }
+
+  .cta-content h2 {
+    letter-spacing: -4px;
+  }
+}

@@ -1,0 +1,2425 @@
+
+
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #050816;
+  color: #ffffff;
+
+  overflow: hidden;
+  position: relative;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-section *,
+.hero-section *::before,
+.hero-section *::after {
+  box-sizing: border-box;
+}
+
+.hero-section a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   NAVBAR
+   NOT FIXED
+========================================================= */
+
+.hero-navbar {
+  position: relative;
+  top: auto;
+  left: auto;
+
+  width: 100%;
+  height: 78px;
+
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+
+
+
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.hero-logo {
+  width: 120px;
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  text-decoration: none;
+  line-height: 0;
+
+  margin-right: 0;
+}
+
+.hero-logo img {
+  width: 105px;
+  height: 108px;
+
+  display: block;
+
+  object-fit: contain;
+
+  border-radius: 50%;
+}
+  
+/* =========================================================
+   FEE BENEFITS SECTION
+========================================================= */
+
+.fee-benefits {
+  position: relative;
+  width: 100%;
+  min-height: 115px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #050816;
+
+  border-top: 1px solid rgba(244, 180, 0, 0.25);
+  border-bottom: 1px solid rgba(244, 180, 0, 0.25);
+
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FIXED TITLE
+========================================================= */
+
+.fee-benefits-title {
+  position: relative;
+  z-index: 5;
+
+  margin-bottom: 12px;
+
+  color: #f4b400;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SCROLLING AREA
+========================================================= */
+
+.fee-benefits-scroll {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+.fee-benefits-track {
+  display: flex;
+  align-items: center;
+
+  width: max-content;
+
+  animation: feeBenefitsScroll 24s linear infinite;
+}
+
+
+/* =========================================================
+   SCROLLING WORDS
+========================================================= */
+
+.fee-benefits-track span {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0 55px;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SEPARATOR
+========================================================= */
+
+.fee-benefits-track span::after {
+  content: "•";
+
+  position: absolute;
+  right: 0;
+
+  color: #f4b400;
+
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+@keyframes feeBenefitsScroll {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+/* =========================================================
+   HOVER PAUSE
+========================================================= */
+
+.fee-benefits:hover .fee-benefits-track {
+  animation-play-state: paused;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .fee-benefits {
+    min-height: 105px;
+  }
+
+  .fee-benefits-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .fee-benefits-track {
+    animation-duration: 21s;
+  }
+
+  .fee-benefits-track span {
+    font-size: 14px;
+    padding: 0 45px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .fee-benefits {
+    min-height: 92px;
+  }
+
+  .fee-benefits-title {
+    font-size: 13px;
+    margin-bottom: 9px;
+    padding: 0 15px;
+  }
+
+  .fee-benefits-track {
+    animation-duration: 18s;
+  }
+
+  .fee-benefits-track span {
+    font-size: 11px;
+    padding: 0 32px;
+  }
+
+  .fee-benefits-track span::after {
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .fee-benefits {
+    min-height: 82px;
+  }
+
+  .fee-benefits-title {
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+  }
+
+  .fee-benefits-track {
+    animation-duration: 15s;
+  }
+
+  .fee-benefits-track span {
+    font-size: 9px;
+    padding: 0 25px;
+  }
+
+  .fee-benefits-track span::after {
+    font-size: 13px;
+  }
+
+}
+
+/* =================================================
+   APPLY NOW BUTTON
+================================================= */
+
+.hero-apply-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 25px;
+
+  background: #d5d041;
+  color: #fff;
+
+  border: 1px solid #111;
+  border-radius: 4px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.hero-apply-button:hover {
+  background: #f3e11e;
+  color: #111;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.hero-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 36px;
+
+  margin-left: auto;
+
+  position: relative;
+
+  height: 100%;
+}
+
+
+/* =========================================================
+   NORMAL NAV LINK
+========================================================= */
+
+.hero-nav .nav-link {
+  position: relative;
+
+  height: 100%;
+
+  padding: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.hero-nav .nav-link:hover {
+  color: #f5c542;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   NAV LINK UNDERLINE
+========================================================= */
+
+.hero-nav .nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 18px;
+
+  width: 0;
+  height: 2px;
+
+  background: #f5c542;
+
+  transition: width 0.25s ease;
+}
+
+.hero-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================================
+   COURSES DROPDOWN WRAPPER
+========================================================= */
+
+.nav-dropdown {
+  position: relative;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 999999;
+}
+
+
+/* =========================================================
+   COURSES BUTTON
+========================================================= */
+
+.nav-dropdown .nav-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   DROPDOWN ARROW
+========================================================= */
+
+.dropdown-arrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #f5c542;
+
+  font-size: 17px;
+  line-height: 1;
+
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.nav-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   COURSES DROPDOWN
+   WIDE + CENTERED
+========================================================= */
+
+.courses-dropdown {
+  position: absolute;
+
+  top: calc(100% + 12px);
+
+  left: 50%;
+
+  width: 820px;
+
+  max-width: calc(100vw - 40px);
+
+  padding: 22px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d1728 0%,
+      #050816 100%
+    );
+
+  border:
+    1px solid
+    rgba(245, 197, 66, 0.25);
+
+  border-top:
+    3px solid #f5c542;
+
+  border-radius:
+    0
+    0
+    16px
+    16px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.65),
+    0 8px 30px rgba(0, 0, 0, 0.35);
+
+  transform:
+    translate(-50%, -12px)
+    scale(0.98);
+
+  transform-origin: top center;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.28s ease,
+    visibility 0.25s ease;
+
+  z-index: 999999;
+}
+
+
+/* =========================================================
+   DROPDOWN INVISIBLE BRIDGE
+========================================================= */
+
+.courses-dropdown::before {
+  content: "";
+
+  position: absolute;
+
+  top: -15px;
+  left: 0;
+
+  width: 100%;
+  height: 15px;
+
+  background: transparent;
+}
+
+
+/* =========================================================
+   DROPDOWN SHOW
+========================================================= */
+
+.nav-dropdown:hover .courses-dropdown,
+.nav-dropdown:focus-within .courses-dropdown {
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+
+  transform:
+    translate(-50%, 0)
+    scale(1);
+}
+
+
+/* =========================================================
+   DROPDOWN LINKS
+========================================================= */
+
+.courses-dropdown a {
+  min-height: 62px;
+
+  padding: 12px 16px;
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1.35;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    padding-left 0.25s ease;
+}
+
+.courses-dropdown a:hover {
+  color: #f5c542;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 197, 66, 0.12),
+      rgba(255, 255, 255, 0.035)
+    );
+
+  border-color:
+    rgba(245, 197, 66, 0.35);
+
+  transform: translateY(-2px);
+
+  padding-left: 21px;
+}
+
+
+/* =========================================================
+   DROPDOWN GOLD SIDE LINE
+========================================================= */
+
+.courses-dropdown a::before {
+  content: "";
+
+  width: 3px;
+  height: 0;
+
+  margin-right: 0;
+
+  background: #f5c542;
+
+  border-radius:
+    0
+    4px
+    4px
+    0;
+
+  transition: height 0.25s ease;
+}
+
+.courses-dropdown a:hover::before {
+  height: 55%;
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.nav-contact-btn {
+  min-width: 135px;
+
+  height: 42px;
+
+  padding: 0 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #f5c542;
+
+  color: #050816;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+
+  white-space: nowrap;
+
+  box-shadow:
+    0 8px 25px rgba(245, 197, 66, 0.14);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.nav-contact-btn:hover {
+  background: #ffffff;
+
+  color: #050816;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================================
+   MAIN HERO
+========================================================= */
+
+.hero-main {
+  width: 100%;
+
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  padding:
+    55px
+    50px
+    70px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(290px, 0.72fr)
+    minmax(320px, 0.82fr);
+
+  align-items: center;
+
+  gap: 38px;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   HERO LEFT
+========================================================= */
+
+.hero-left {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  justify-content: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.hero-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  padding:
+    8px
+    14px;
+
+  border-left:
+    3px solid #f5c542;
+
+  background:
+    rgba(245, 197, 66, 0.08);
+
+  color: #f5c542;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+}
+
+
+/* =========================================================
+   HERO HEADING
+========================================================= */
+
+.hero-heading {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 0;
+
+  margin:
+    0
+    0
+    22px;
+}
+
+.hero-heading span,
+.hero-heading strong {
+  display: block;
+
+  margin: 0;
+
+  font-size:
+    clamp(55px, 6vw, 88px);
+
+  line-height: 0.88;
+
+  letter-spacing: -4px;
+}
+
+.hero-heading span {
+  color: #ffffff;
+
+  font-weight: 800;
+}
+
+.hero-heading strong {
+  color: #f5c542;
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   SUB HEADING
+========================================================= */
+
+.hero-left h2 {
+  margin:
+    0
+    0
+    17px;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(25px, 2.8vw, 38px);
+
+  line-height: 1.15;
+
+  font-weight: 700;
+}
+
+.hero-left h2 span {
+  color: #f5c542;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-left p {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: #aeb7c9;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   MINI STATS
+========================================================= */
+
+.hero-mini-stats {
+  width: 100%;
+
+  max-width: 650px;
+
+  margin-top: 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.hero-mini-stat {
+  padding:
+    15px
+    14px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 9px;
+
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.hero-mini-stat:hover {
+  border-color:
+    rgba(245, 197, 66, 0.45);
+
+  transform: translateY(-3px);
+}
+
+.hero-mini-stat strong {
+  color: #f5c542;
+
+  font-size: 23px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.hero-mini-stat span {
+  color: #aeb7c9;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.45px;
+}
+
+
+/* =========================================================
+   COLLEGE HIGHLIGHT CARD
+========================================================= */
+
+.hero-scholarship {
+  min-width: 0;
+
+  min-height: 570px;
+
+  padding:
+    32px
+    25px
+    0;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #121c2e 0%,
+      #0a1120 100%
+    );
+
+  border:
+    1px solid
+    rgba(245, 197, 66, 0.18);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.32);
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   CARD GLOW
+========================================================= */
+
+.hero-scholarship::before {
+  content: "";
+
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  top: -110px;
+  right: -110px;
+
+  background:
+    rgba(245, 197, 66, 0.08);
+
+  border-radius: 50%;
+
+  filter: blur(10px);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.scholarship-title {
+  position: relative;
+
+  z-index: 2;
+
+  color: #f5c542;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   MAIN NUMBER
+========================================================= */
+
+.scholarship-main-number {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 9px;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(75px, 7vw, 110px);
+
+  line-height: 0.85;
+
+  font-weight: 900;
+
+  letter-spacing: -5px;
+}
+
+.scholarship-main-number sup {
+  color: #f5c542;
+
+  font-size: 0.38em;
+
+  vertical-align: top;
+
+  position: relative;
+
+  top: 7px;
+
+  margin-left: 3px;
+}
+
+
+/* =========================================================
+   YEARS
+========================================================= */
+
+.scholarship-crore {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 10px;
+
+  color: #9ca9bd;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+}
+
+
+/* =========================================================
+   ALUMNI
+========================================================= */
+
+.scholarship-percent {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 22px;
+
+  padding:
+    11px
+    23px;
+
+  border-radius: 8px;
+
+  background:
+    rgba(245, 197, 66, 0.09);
+
+  border:
+    1px solid
+    rgba(245, 197, 66, 0.15);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.scholarship-percent strong {
+  color: #f5c542;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  font-weight: 900;
+}
+
+.scholarship-percent span {
+  color: #aeb7c9;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.8px;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.scholarship-description {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 300px;
+
+  margin-top: 17px;
+
+  color: #aeb7c9;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   STUDENT IMAGE
+========================================================= */
+
+.student-image {
+  width: 100%;
+
+  margin-top: auto;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.student-image img {
+  width: 100%;
+
+  max-width: 330px;
+
+  height: 295px;
+
+  object-fit: contain;
+
+  object-position: bottom center;
+
+  display: block;
+}
+
+
+/* =========================================================
+   APPLICATION FORM
+========================================================= */
+
+.hero-form-wrapper {
+  width: 100%;
+
+  min-width: 0;
+
+  scroll-margin-top: 30px;
+}
+
+
+/* =========================================================
+   RANKING SECTION
+========================================================= */
+
+.ranking-section {
+  width: 100%;
+
+  max-width: 1440px;
+
+  margin: 0 auto;
+
+  padding:
+    0
+    50px
+    65px;
+
+  scroll-margin-top: 30px;
+}
+
+
+/* =========================================================
+   RANKING CARD
+========================================================= */
+
+.ranking-card {
+  width: 100%;
+
+  min-height: 175px;
+
+  padding:
+    25px
+    28px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.25fr
+    0.8fr
+    0.8fr
+    1.1fr;
+
+  align-items: center;
+
+  gap: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #111a2b,
+      #080e1b
+    );
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   UNIVERSITY
+========================================================= */
+
+.ranking-university {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  justify-content: center;
+}
+
+.university-logo {
+  width: 140px;
+
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  margin-bottom: 6px;
+}
+
+.university-logo img {
+  width: 140px;
+
+  height: 52px;
+
+  object-fit: contain;
+
+  object-position: left center;
+}
+
+.ranking-university h3 {
+  margin:
+    2px
+    0
+    3px;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: 0.8px;
+}
+
+.announced {
+  color: #9ca9bd;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+}
+
+.ranking-university h4 {
+  margin:
+    8px
+    0
+    0;
+
+  color: #aeb7c9;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.ranking-university h4 b {
+  color: #f5c542;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   RANKING NUMBERS
+========================================================= */
+
+.ranking-number {
+  min-width: 0;
+
+  padding-left: 22px;
+
+  border-left:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.ranking-number strong {
+  color: #f5c542;
+
+  font-size:
+    clamp(32px, 3.5vw, 50px);
+
+  line-height: 0.9;
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+}
+
+.ranking-number > span {
+  margin-top: 7px;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.ranking-number p {
+  margin:
+    7px
+    0
+    0;
+
+  color: #8996aa;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+.ranking-number p b {
+  color: #c2cad7;
+}
+
+
+/* =========================================================
+   GLOBAL RANKING
+========================================================= */
+
+.global-ranking {
+  min-width: 0;
+
+  padding-left: 22px;
+
+  border-left:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+.global-ranking > span {
+  color: #f5c542;
+
+  font-size:
+    clamp(32px, 3.5vw, 48px);
+
+  line-height: 0.9;
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+
+  flex-shrink: 0;
+}
+
+.global-ranking > div {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.global-ranking small {
+  color: #77859b;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.global-ranking strong {
+  color: #ffffff;
+
+  font-size: 12px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (max-width: 1250px) {
+
+  .hero-navbar {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .hero-nav {
+    gap: 28px;
+  }
+
+  .hero-main {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    gap: 28px;
+
+    grid-template-columns:
+      minmax(0, 1.1fr)
+      minmax(270px, 0.72fr)
+      minmax(290px, 0.8fr);
+  }
+
+  .hero-heading span,
+  .hero-heading strong {
+    font-size:
+      clamp(50px, 6vw, 78px);
+  }
+
+  .ranking-section {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .courses-dropdown {
+    width: 760px;
+  }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .hero-navbar {
+    height: 74px;
+
+    padding:
+      0
+      25px;
+
+    gap: 18px;
+  }
+
+  .hero-logo {
+    width: 100px;
+  }
+
+  .hero-logo img {
+    width: 84px;
+    height: 50px;
+  }
+
+  .hero-nav {
+    gap: 20px;
+  }
+
+  .hero-nav .nav-link {
+    font-size: 11px;
+  }
+
+  .nav-contact-btn {
+    min-width: 115px;
+
+    height: 39px;
+
+    padding:
+      0
+      15px;
+
+    font-size: 10px;
+  }
+
+  .courses-dropdown {
+    width: 680px;
+
+    max-width:
+      calc(100vw - 35px);
+
+    padding: 17px;
+
+    gap: 8px;
+  }
+
+  .courses-dropdown a {
+    min-height: 55px;
+
+    font-size: 12px;
+  }
+
+  .hero-main {
+    padding:
+      40px
+      25px
+      60px;
+
+    grid-template-columns:
+      1fr
+      1fr;
+
+    gap: 32px;
+  }
+
+  .hero-left {
+    grid-column: 1 / -1;
+
+    max-width: 850px;
+  }
+
+  .hero-scholarship {
+    width: 100%;
+
+    min-height: 540px;
+  }
+
+  .hero-form-wrapper {
+    width: 100%;
+  }
+
+  .ranking-section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .ranking-card {
+    grid-template-columns:
+      1fr
+      1fr;
+
+    gap: 22px;
+  }
+
+  .ranking-number:nth-child(3) {
+    border-left: none;
+
+    padding-left: 0;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .hero-navbar {
+    height: 70px;
+
+    padding:
+      0
+      20px;
+  }
+
+  .hero-logo {
+    width: 100px;
+  }
+
+  .hero-logo img {
+    width: 82px;
+    height: 46px;
+  }
+
+  .hero-nav {
+    gap: 17px;
+  }
+
+  .hero-nav .nav-link {
+    font-size: 10px;
+  }
+
+  .nav-contact-btn {
+    min-width: 105px;
+
+    height: 37px;
+
+    font-size: 10px;
+  }
+
+  .courses-dropdown {
+    width: 620px;
+
+    max-width:
+      calc(100vw - 25px);
+  }
+
+  .hero-main {
+    padding:
+      35px
+      20px
+      55px;
+
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+  }
+
+  .hero-left {
+    grid-column: auto;
+
+    width: 100%;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .hero-eyebrow {
+    border-left: none;
+
+    border-bottom:
+      2px solid #f5c542;
+
+    justify-content: center;
+  }
+
+  .hero-heading {
+    align-items: center;
+  }
+
+  .hero-left p {
+    max-width: 650px;
+  }
+
+  .hero-mini-stats {
+    max-width: 650px;
+  }
+
+  .hero-scholarship {
+    width: 100%;
+
+    max-width: 560px;
+
+    margin:
+      0
+      auto;
+  }
+
+  .hero-form-wrapper {
+    width: 100%;
+
+    max-width: 650px;
+
+    margin:
+      0
+      auto;
+  }
+
+  .ranking-card {
+    grid-template-columns:
+      1fr
+      1fr;
+  }
+
+  .ranking-university {
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .university-logo {
+    justify-content: center;
+  }
+
+  .university-logo img {
+    object-position: center;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .hero-section {
+    min-height: auto;
+  }
+
+
+  /* -------------------------
+     NAVBAR
+  ------------------------- */
+
+  .hero-navbar {
+    height: 64px;
+
+    padding:
+      0
+      14px;
+
+    gap: 10px;
+  }
+
+  .hero-logo {
+    width: auto;
+
+    margin-right: auto;
+  }
+
+  .hero-logo img {
+    width: 82px;
+
+    height: 44px;
+  }
+
+  .hero-nav {
+    gap: 11px;
+
+    margin-left: auto;
+  }
+
+  .hero-nav .nav-link {
+    font-size: 9px;
+
+    letter-spacing: 0.3px;
+  }
+
+  .hero-nav .nav-link::after {
+    bottom: 12px;
+  }
+
+  .dropdown-arrow {
+    font-size: 14px;
+  }
+
+  .nav-contact-btn {
+    min-width: 82px;
+
+    height: 32px;
+
+    padding:
+      0
+      9px;
+
+    font-size: 9px;
+
+    border-radius: 5px;
+  }
+
+
+  /* -------------------------
+     COURSES DROPDOWN
+  ------------------------- */
+
+  .courses-dropdown {
+    top: calc(100% + 8px);
+
+    width: 340px;
+
+    max-width:
+      calc(100vw - 20px);
+
+    padding: 10px;
+
+    grid-template-columns: 1fr;
+
+    gap: 6px;
+
+    border-radius:
+      0
+      0
+      12px
+      12px;
+  }
+
+  .courses-dropdown a {
+    min-height: 46px;
+
+    padding:
+      9px
+      11px;
+
+    font-size: 11px;
+
+    border-radius: 7px;
+  }
+
+  .courses-dropdown a:hover {
+    padding-left: 15px;
+  }
+
+
+  /* -------------------------
+     HERO
+  ------------------------- */
+
+  .hero-main {
+    padding:
+      30px
+      15px
+      50px;
+
+    gap: 28px;
+  }
+
+
+  /* -------------------------
+     EYEBROW
+  ------------------------- */
+
+  .hero-eyebrow {
+    margin-bottom: 17px;
+
+    padding:
+      6px
+      10px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.1px;
+  }
+
+
+  /* -------------------------
+     HEADING
+  ------------------------- */
+
+  .hero-heading {
+    margin-bottom: 18px;
+  }
+
+  .hero-heading span,
+  .hero-heading strong {
+    font-size:
+      clamp(47px, 15vw, 68px);
+
+    letter-spacing: -3px;
+  }
+
+
+  /* -------------------------
+     SUB HEADING
+  ------------------------- */
+
+  .hero-left h2 {
+    font-size: 23px;
+
+    line-height: 1.2;
+
+    margin-bottom: 14px;
+  }
+
+
+  /* -------------------------
+     DESCRIPTION
+  ------------------------- */
+
+  .hero-left p {
+    font-size: 12.5px;
+
+    line-height: 1.7;
+  }
+
+
+  /* -------------------------
+     MINI STATS
+  ------------------------- */
+
+  .hero-mini-stats {
+    margin-top: 22px;
+
+    grid-template-columns: 1fr;
+
+    gap: 7px;
+  }
+
+  .hero-mini-stat {
+    padding:
+      12px
+      14px;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    text-align: left;
+  }
+
+  .hero-mini-stat strong {
+    font-size: 20px;
+  }
+
+  .hero-mini-stat span {
+    font-size: 8px;
+  }
+
+
+  /* -------------------------
+     COLLEGE CARD
+  ------------------------- */
+
+  .hero-scholarship {
+    min-height: 490px;
+
+    padding:
+      27px
+      17px
+      0;
+
+    border-radius: 16px;
+  }
+
+  .scholarship-title {
+    font-size: 11px;
+
+    letter-spacing: 1.4px;
+  }
+
+  .scholarship-main-number {
+    font-size: 87px;
+
+    letter-spacing: -4px;
+  }
+
+  .scholarship-crore {
+    font-size: 9px;
+
+    letter-spacing: 1.4px;
+  }
+
+  .scholarship-percent {
+    margin-top: 18px;
+
+    padding:
+      9px
+      18px;
+  }
+
+  .scholarship-percent strong {
+    font-size: 23px;
+  }
+
+  .scholarship-percent span {
+    font-size: 8px;
+  }
+
+  .scholarship-description {
+    margin-top: 14px;
+
+    font-size: 10px;
+
+    line-height: 1.55;
+  }
+
+  .student-image img {
+    height: 255px;
+
+    max-width: 275px;
+  }
+
+
+  /* -------------------------
+     RANKING
+  ------------------------- */
+
+  .ranking-section {
+    padding:
+      0
+      15px
+      40px;
+  }
+
+  .ranking-card {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding:
+      22px
+      16px;
+
+    border-radius: 14px;
+  }
+
+  .ranking-university {
+    padding-bottom: 17px;
+
+    border-bottom:
+      1px solid
+      rgba(255, 255, 255, 0.1);
+  }
+
+  .ranking-number {
+    padding:
+      0
+      0
+      17px;
+
+    border-left: none;
+
+    border-bottom:
+      1px solid
+      rgba(255, 255, 255, 0.1);
+
+    text-align: center;
+
+    align-items: center;
+  }
+
+  .ranking-number:nth-child(3) {
+    padding-left: 0;
+
+    border-left: none;
+  }
+
+  .ranking-number strong {
+    font-size: 41px;
+  }
+
+  .ranking-number > span {
+    font-size: 9px;
+  }
+
+  .ranking-number p {
+    font-size: 8px;
+  }
+
+  .global-ranking {
+    padding-left: 0;
+
+    border-left: none;
+
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  .global-ranking > span {
+    font-size: 40px;
+  }
+
+  .global-ranking strong {
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .hero-navbar {
+    height: 62px;
+
+    padding:
+      0
+      11px;
+  }
+
+  .hero-logo img {
+    width: 76px;
+
+    height: 41px;
+  }
+
+  .hero-nav {
+    gap: 8px;
+  }
+
+  .hero-nav .nav-link {
+    font-size: 8px;
+  }
+
+  .dropdown-arrow {
+    font-size: 12px;
+  }
+
+  .nav-contact-btn {
+    min-width: 74px;
+
+    height: 30px;
+
+    padding:
+      0
+      7px;
+
+    font-size: 8px;
+  }
+
+  .courses-dropdown {
+    width: 300px;
+
+    max-width:
+      calc(100vw - 14px);
+
+    padding: 8px;
+  }
+
+  .courses-dropdown a {
+    min-height: 43px;
+
+    padding:
+      8px
+      9px;
+
+    font-size: 10px;
+  }
+
+  .hero-main {
+    padding:
+      28px
+      12px
+      45px;
+
+    gap: 25px;
+  }
+
+  .hero-heading span,
+  .hero-heading strong {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-left h2 {
+    font-size: 20px;
+  }
+
+  .hero-left p {
+    font-size: 11.5px;
+  }
+
+  .hero-scholarship {
+    min-height: 460px;
+
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .scholarship-main-number {
+    font-size: 78px;
+  }
+
+  .student-image img {
+    height: 230px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 340px) {
+
+  .hero-navbar {
+    height: 60px;
+
+    padding:
+      0
+      9px;
+  }
+
+  .hero-logo img {
+    width: 70px;
+
+    height: 38px;
+  }
+
+  .hero-nav {
+    gap: 6px;
+  }
+
+  .hero-nav .nav-link {
+    font-size: 7.5px;
+  }
+
+  .dropdown-arrow {
+    font-size: 11px;
+  }
+
+  .nav-contact-btn {
+    min-width: 68px;
+
+    height: 28px;
+
+    padding:
+      0
+      6px;
+
+    font-size: 7.5px;
+  }
+
+  .courses-dropdown {
+    width: 270px;
+
+    max-width:
+      calc(100vw - 10px);
+  }
+
+  .courses-dropdown a {
+    min-height: 41px;
+
+    font-size: 9.5px;
+  }
+
+  .hero-main {
+    padding:
+      25px
+      10px
+      40px;
+
+    gap: 23px;
+  }
+
+  .hero-heading span,
+  .hero-heading strong {
+    font-size: 40px;
+  }
+
+  .hero-left h2 {
+    font-size: 19px;
+  }
+
+  .hero-scholarship {
+    min-height: 440px;
+  }
+
+  .scholarship-main-number {
+    font-size: 72px;
+  }
+
+  .student-image img {
+    height: 215px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.nav-link:focus-visible,
+.nav-contact-btn:focus-visible,
+.courses-dropdown a:focus-visible,
+.hero-logo:focus-visible {
+  outline:
+    2px solid #f5c542;
+
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+
+    transition-duration:
+      0.01ms !important;
+
+    animation-duration:
+      0.01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+  }
+}

@@ -1,0 +1,866 @@
+/* =========================================================
+   D.D. COLLEGE DEHRADUN
+   FOOTER CSS
+========================================================= */
+
+.footer {
+  width: 100%;
+  background: #050816;
+  color: #ffffff;
+  border-top: 1px solid rgba(244, 180, 0, 0.25);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* =========================================================
+   MAIN FOOTER
+========================================================= */
+
+.footer-container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 70px 5% 60px;
+
+  display: grid;
+  grid-template-columns:
+    1.5fr
+    1fr
+    1.25fr
+    1.2fr;
+
+  gap: 55px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.footer-brand {
+  min-width: 0;
+}
+
+.footer-logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.footer-logo {
+  width: 194px;
+  height: 94px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+  overflow: hidden;
+
+  background: transparent;
+  padding: 0;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  background: transparent;
+}
+
+/* =========================================================
+   LOGO TEXT
+========================================================= */
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-logo-text strong {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+}
+
+.footer-logo-text span {
+  font-size: 11px;
+  color: #f5c542;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   TAGLINE
+========================================================= */
+
+.footer-tagline {
+  margin: 22px 0 12px;
+
+  color: #f5c542;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.footer-description {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: #aeb6c7;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SOCIAL MEDIA
+========================================================= */
+
+.footer-socials {
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(244, 180, 0, 0.3);
+  border-radius: 50%;
+
+  color: #f5c542;
+  background: rgba(244, 180, 0, 0.05);
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.social-link:hover {
+  background: #f5c542;
+  color: #050816;
+  border-color: #f5c542;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.footer-column {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-column h3 {
+  margin: 0 0 23px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  position: relative;
+}
+
+.footer-column h3::after {
+  content: "";
+
+  display: block;
+
+  width: 34px;
+  height: 2px;
+
+  margin-top: 9px;
+
+  background: #f5c542;
+}
+
+.footer-column > a {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #aeb6c7;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  word-break: break-word;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-column > a:hover {
+  color: #f5c542;
+  transform: translateX(3px);
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.footer-contact-item {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-top: 17px;
+
+  color: #aeb6c7;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-contact-item svg {
+  flex-shrink: 0;
+
+  margin-top: 2px;
+
+  color: #f5c542;
+}
+
+.footer-contact-item span {
+  display: block;
+}
+
+.footer-contact-item a {
+  color: #aeb6c7;
+
+  text-decoration: none;
+
+  word-break: break-word;
+
+  transition: color 0.25s ease;
+}
+
+.footer-contact-item a:hover {
+  color: #f5c542;
+}
+
+/* =========================================================
+   APPLY SECTION
+========================================================= */
+
+.footer-apply-section {
+  width: 100%;
+
+  padding: 0 5% 45px;
+
+  box-sizing: border-box;
+}
+
+.footer-apply-content {
+  width: 100%;
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  padding: 30px 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  background: #0b1220;
+
+  border: 1px solid rgba(244, 180, 0, 0.25);
+  border-radius: 10px;
+
+  box-sizing: border-box;
+}
+
+.footer-apply-text {
+  min-width: 0;
+}
+
+.footer-apply-small {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #f5c542;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.footer-apply-text h3 {
+  margin: 0 0 7px;
+
+  color: #ffffff;
+
+  font-size: clamp(20px, 2.3vw, 29px);
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.footer-apply-text p {
+  margin: 0;
+
+  color: #aeb6c7;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-apply {
+  min-width: 145px;
+
+  padding: 14px 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  background: #f5c542;
+  color: #050816;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+
+  flex-shrink: 0;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.footer-apply:hover {
+  transform: translateY(-2px);
+  background: #ffd866;
+}
+
+.footer-apply svg {
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.footer-bottom {
+  width: 100%;
+
+  min-height: 65px;
+
+  padding: 18px 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-sizing: border-box;
+}
+
+.footer-bottom-left,
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px 18px;
+}
+
+.footer-bottom span,
+.footer-bottom a {
+  color: #7f899c;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #f5c542;
+}
+
+.footer-bottom-right span {
+  color: #f5c542;
+  font-weight: 700;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .footer-container {
+    grid-template-columns:
+      1.4fr
+      1fr
+      1fr;
+
+    gap: 45px;
+
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-description {
+    max-width: 600px;
+  }
+}
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 850px) {
+  .footer-container {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 45px 35px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-apply-content {
+    padding: 28px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-bottom-right {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ACADEMICS = LEFT
+   QUICK LINKS = RIGHT
+========================================================= */
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+
+    padding: 50px 6% 45px;
+
+    gap: 38px 25px;
+  }
+
+  /* ================================================
+     BRAND - FULL WIDTH
+  ================================================ */
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  /* ================================================
+     ACADEMICS - LEFT SIDE
+  ================================================ */
+
+  .footer-column:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  /* ================================================
+     QUICK LINKS - RIGHT SIDE
+  ================================================ */
+
+  .footer-column:nth-child(2) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  /* ================================================
+     ADMISSIONS - FULL WIDTH
+  ================================================ */
+
+  .footer-contact {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  /* ================================================
+     DESCRIPTION
+  ================================================ */
+
+  .footer-description {
+    max-width: 100%;
+
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  /* ================================================
+     LOGO
+  ================================================ */
+
+  .footer-logo {
+    width: 104px;
+    height: 94px;
+
+    background: transparent;
+    padding: 0;
+  }
+
+  .footer-logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    background: transparent;
+  }
+
+  /* ================================================
+     LOGO TEXT
+  ================================================ */
+
+  .footer-logo-text strong {
+    font-size: 18px;
+  }
+
+  .footer-logo-text span {
+    font-size: 10px;
+  }
+
+  /* ================================================
+     COLUMNS
+  ================================================ */
+
+  .footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .footer-column h3::after {
+    width: 30px;
+    height: 2px;
+    margin-top: 8px;
+  }
+
+  .footer-column > a {
+    margin-bottom: 11px;
+
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* ================================================
+     CONTACT
+  ================================================ */
+
+  .footer-contact-item {
+    gap: 10px;
+
+    margin-top: 15px;
+
+    font-size: 13px;
+  }
+
+  /* ================================================
+     SOCIAL
+  ================================================ */
+
+  .footer-socials {
+    margin-top: 22px;
+    gap: 9px;
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* ================================================
+     APPLY
+  ================================================ */
+
+  .footer-apply-section {
+    padding: 0 6% 35px;
+  }
+
+  .footer-apply-content {
+    padding: 25px 22px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 22px;
+  }
+
+  .footer-apply {
+    width: 100%;
+  }
+
+  /* ================================================
+     BOTTOM
+  ================================================ */
+
+  .footer-bottom {
+    padding: 20px 6%;
+  }
+
+  .footer-bottom-left,
+  .footer-bottom-right {
+    width: 100%;
+
+    gap: 8px 15px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    gap: 32px 18px;
+  }
+
+  /* BRAND */
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  /* ACADEMICS LEFT */
+  .footer-column:nth-child(3) {
+    grid-column: 1;
+  }
+
+  /* QUICK LINKS RIGHT */
+  .footer-column:nth-child(2) {
+    grid-column: 2;
+  }
+
+  /* ADMISSIONS */
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+
+  /* LOGO */
+  .footer-logo {
+    width: 104px;
+    height: 94px;
+  }
+
+  .footer-logo-text strong {
+    font-size: 16px;
+  }
+
+  .footer-logo-text span {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .footer-tagline {
+    font-size: 13px;
+  }
+
+  .footer-description {
+    font-size: 12.5px;
+  }
+
+  .footer-column h3 {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .footer-column > a {
+    font-size: 12.5px;
+    margin-bottom: 10px;
+  }
+
+  .footer-contact-item {
+    font-size: 12px;
+  }
+
+  .footer-apply-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer-apply-text h3 {
+    font-size: 20px;
+  }
+
+  .footer-apply-text p {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 320px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+
+    padding: 40px 16px;
+
+    gap: 28px 14px;
+  }
+
+  /* BRAND */
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  /* ACADEMICS LEFT */
+  .footer-column:nth-child(3) {
+    grid-column: 1;
+  }
+
+  /* QUICK LINKS RIGHT */
+  .footer-column:nth-child(2) {
+    grid-column: 2;
+  }
+
+  /* ADMISSIONS */
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+
+  .footer-logo-link {
+    gap: 10px;
+  }
+
+  .footer-logo {
+    width: 90px;
+    height: 82px;
+  }
+
+  .footer-logo-text strong {
+    font-size: 14px;
+  }
+
+  .footer-logo-text span {
+    font-size: 8px;
+    letter-spacing: 1.2px;
+  }
+
+  .footer-socials {
+    gap: 7px;
+  }
+
+  .social-link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer-column h3 {
+    font-size: 12px;
+  }
+
+  .footer-column > a {
+    font-size: 11.5px;
+    margin-bottom: 9px;
+  }
+
+  .footer-contact-item {
+    font-size: 11.5px;
+    gap: 8px;
+  }
+
+  .footer-apply-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer-apply-content {
+    padding: 22px 18px;
+  }
+
+  .footer-bottom {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .footer-bottom span,
+  .footer-bottom a {
+    font-size: 11px;
+  }
+}
