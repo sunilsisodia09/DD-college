@@ -5,20 +5,19 @@ import "./Affiliation.css";
 
 const affiliations = [
   {
-    name: "Uttarakhand Technical University",
+    name: "Bar Council of India",
     logo: "/images/BCI.png",
   },
-   {
-    name: "Uttarakhand Technical University",
+  {
+    name: "Indira Gandhi National Open University",
     logo: "/images/ind.png",
   },
-  
   {
-    name: "Hemwati Nandan Bahuguna Garhwal University",
+    name: "Uttarakhand Sanskrit University",
     logo: "/images/sanskrit.png",
   },
   {
-    name: "Sri Dev Suman Uttarakhand University",
+    name: "Uttarakhand Board of Technical Education",
     logo: "/images/UBTER.png",
   },
   {
@@ -26,11 +25,11 @@ const affiliations = [
     logo: "/images/UGC.png",
   },
   {
-    name: "National Assessment and Accreditation Council",
+    name: "Hemwati Nandan Bahuguna Garhwal University",
     logo: "/images/Veer.png",
   },
   {
-    name: "Pharmacy Council of India",
+    name: "Sri Dev Suman Uttarakhand University",
     logo: "/images/Shri.png",
   },
   {
@@ -41,14 +40,24 @@ const affiliations = [
 
 export default function Affiliation() {
   return (
-    <section className="affiliation-section" id="affiliation">
-      <div className="affiliation-overlay"></div>
+    <section
+      className="affiliation-section"
+      id="affiliation"
+      aria-labelledby="affiliation-title"
+    >
+      {/* Background Overlay */}
+      <div
+        className="affiliation-overlay"
+        aria-hidden="true"
+      />
 
       <div className="affiliation-container">
 
         {/* ================= HEADING ================= */}
         <div className="affiliation-heading">
-          <h2>Our Affiliations / Recognition</h2>
+          <h2 id="affiliation-title">
+            Our Affiliations / Recognition
+          </h2>
 
           <p>
             Our Affiliations and Recognition reflect the academic credibility
@@ -61,15 +70,24 @@ export default function Affiliation() {
 
         {/* ================= LOGOS ================= */}
         <div className="affiliation-logos">
-          {affiliations.map((item, index) => (
-            <div className="affiliation-logo-card" key={index}>
+          {affiliations.map((item) => (
+            <div
+              className="affiliation-logo-card"
+              key={item.name}
+            >
               <div className="affiliation-logo-inner">
                 <Image
                   src={item.logo}
-                  alt={item.name}
+                  alt={`${item.name} logo`}
                   width={180}
                   height={130}
                   className="affiliation-logo"
+                  sizes="
+                    (max-width: 480px) 115px,
+                    (max-width: 768px) 145px,
+                    (max-width: 1200px) 160px,
+                    155px
+                  "
                 />
               </div>
             </div>

@@ -282,21 +282,21 @@ export default function Footer() {
 
         </div>
 
-        <div className="footer-bottom-right">
+    <div className="footer-bottom-right">
 
-          <a href="#privacy">
-            Privacy Policy
-          </a>
+  <span>
+    Admissions Open 2026–27
+  </span>
 
-          <a href="#terms">
-            Terms & Conditions
-          </a>
+  <a
+    href="https://ddcollege.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    ddcollege.com
+  </a>
 
-          <span>
-            Admissions Open 2026–27
-          </span>
-
-        </div>
+</div>
 
       </div>
 
