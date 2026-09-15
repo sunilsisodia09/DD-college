@@ -6,6 +6,7 @@ import Programs from "@/components/Programs/Programs";
 import LogoMarquee from "@/components/LogoMarquee/LogoMarquee";
 import PlacementCarousel from "@/components/PlacementCarousel/PlacementCarousel";
 import CampusLife from "@/components/CampusLife/CampusLife";
+import Affiliation from "@/components/Affiliation/Affiliation";
 
 import "./landing.css";
 
@@ -15,6 +16,7 @@ export default function Home() {
 
 
       <Hero />
+      <Affiliation/>
       <Programs />
      <PlacementCarousel/>
  
