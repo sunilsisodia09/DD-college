@@ -10,7 +10,7 @@ const affiliations = [
   },
   {
     name: "Indira Gandhi National Open University",
-    logo: "/images/ind.png",
+    logo: "/images/Pharmacy.jpeg",
   },
   {
     name: "Uttarakhand Sanskrit University",
