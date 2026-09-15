@@ -18,6 +18,11 @@ const campusImages = [
     alt: "D.D. College Campus",
     className: "campus-bottom-left",
   },
+   {
+    image: "/images/yoga.jpg",
+    alt: "D.D. College Campus",
+    className: "campus-bottom-right",
+  },
 ];
 
 export default function CampusLife() {
