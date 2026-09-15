@@ -386,11 +386,7 @@ export default function ApplicationForm() {
           <strong>FORM 2026</strong>
         </h3>
 
-        <p>
-          Take the first step towards
-          your future with D.D. College,
-          Dehradun.
-        </p>
+       
 
       </div>
 
