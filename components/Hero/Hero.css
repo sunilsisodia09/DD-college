@@ -2313,7 +2313,7 @@
   }
 
   .hero-logo img {
-    width: 100px;
+    width: 120px;
 
     height: 78px;
   }
@@ -2400,8 +2400,20 @@
 
   outline-offset: 4px;
 }
+@media (max-width: 480px) {
+ .hero-logo img {
+    width: 120px;
 
+    height: 78px;
+  }
+}
+@media (max-width: 393px){
+  .hero-logo img {
+    width: 120px;
 
+    height: 78px;
+  }
+}
 /* =========================================================
    REDUCE MOTION
 ========================================================= */
