@@ -10,7 +10,7 @@ const affiliations = [
   },
   {
     name: "Uttarakhand Board",
-    logo: "/images/indian.png",
+    logo: "/images/ind.png",
   },
   {
     name: "Hemwati Nandan Bahuguna Garhwal University",
