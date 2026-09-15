@@ -8,6 +8,10 @@ const affiliations = [
     name: "Uttarakhand Technical University",
     logo: "/images/BCI.png",
   },
+   {
+    name: "Uttarakhand Technical University",
+    logo: "/images/ind.png",
+  },
   
   {
     name: "Hemwati Nandan Bahuguna Garhwal University",
