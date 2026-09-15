@@ -9,7 +9,7 @@ const students = [
     company: "Bajaj Capital",
     name: "Megha Suyal ",
     role: "Works at Bajaj Capital",
-    package: "60.00",
+ 
     image: "/images/Megha Suyal.jpeg",
   },
 
@@ -18,7 +18,7 @@ const students = [
     company: "Indigo",
     name: "Lavanya Arora",
     role: "Placed in Indigo",
-    package: "54.00",
+ 
     image: "/images/Lavanya Arora.jpeg",
   },
   {
@@ -26,7 +26,7 @@ const students = [
     company: "Spectrum",
     name: "Rajeev Selwan",
     role: "Works at Spectrut",
-    package: "52.00",
+    
     image: "/images/RajeevSelwan.jpeg",
   },
   {
@@ -34,7 +34,7 @@ const students = [
     company: "WIPRO WILP",
     name: "Shweta Kapri",
     role: "Works at WIPRO WILP",
-    package: "48.00",
+    
     image: "/images/ShwetaKapri.jpeg",
   },
   {
@@ -42,7 +42,7 @@ const students = [
     company: "TRENT Limited",
     name: "Gaurav Kumar",
     role: "Works at TRENT Limited",
-    package: "42.00",
+   
     image: "/images/GauravKumar.jpeg",
   },
 ];
