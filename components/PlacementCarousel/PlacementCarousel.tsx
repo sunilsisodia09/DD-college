@@ -1,15 +1,19 @@
+
 "use client";
 
 import { useEffect, useRef } from "react";
 import "./PlacementCarousel.css";
 
+/* =========================================================
+   STUDENT DATA
+========================================================= */
+
 const students = [
   {
     id: 1,
     company: "Bajaj Capital",
-    name: "Megha Suyal ",
+    name: "Megha Suyal",
     role: "Works at Bajaj Capital",
- 
     image: "/images/Megha Suyal.jpeg",
   },
 
@@ -18,34 +22,37 @@ const students = [
     company: "Indigo",
     name: "Lavanya Arora",
     role: "Placed in Indigo",
- 
     image: "/images/Lavanya Arora.jpeg",
   },
+
   {
     id: 4,
     company: "Spectrum",
     name: "Rajeev Selwan",
-    role: "Works at Spectrut",
-    
+    role: "Works at Spectrum",
     image: "/images/RajeevSelwan.jpeg",
   },
+
   {
     id: 5,
     company: "WIPRO WILP",
     name: "Shweta Kapri",
     role: "Works at WIPRO WILP",
-    
     image: "/images/ShwetaKapri.jpeg",
   },
+
   {
     id: 6,
     company: "TRENT Limited",
     name: "Gaurav Kumar",
     role: "Works at TRENT Limited",
-   
     image: "/images/GauravKumar.jpeg",
   },
 ];
+
+/* =========================================================
+   COMPONENT
+========================================================= */
 
 export default function PlacementCarousel() {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -158,6 +165,7 @@ export default function PlacementCarousel() {
 
     resumeTimerRef.current = setTimeout(() => {
       pausedRef.current = false;
+      resumeTimerRef.current = null;
     }, 900);
   };
 
@@ -214,8 +222,8 @@ export default function PlacementCarousel() {
 
     /*
      * At the beginning:
-     * jump to equivalent position in duplicate
-     * section, then move one card backwards.
+     * jump to equivalent position in duplicate section,
+     * then move one card backwards.
      */
     if (slider.scrollLeft <= 5) {
       slider.scrollLeft = loopWidth;
@@ -246,6 +254,10 @@ export default function PlacementCarousel() {
 
     pausedRef.current = false;
   };
+
+  /* =====================================================
+     RETURN
+  ===================================================== */
 
   return (
     <section className="placement-section">
@@ -349,7 +361,7 @@ export default function PlacementCarousel() {
 }
 
 /* =========================================================
-   CARD
+   CARD TYPE
 ========================================================= */
 
 type Student = {
@@ -357,9 +369,12 @@ type Student = {
   company: string;
   name: string;
   role: string;
-  package: string;
   image: string;
 };
+
+/* =========================================================
+   PLACEMENT CARD
+========================================================= */
 
 function PlacementCard({
   student,
@@ -373,7 +388,7 @@ function PlacementCard({
 
       <img
         src={student.image}
-        alt={student.name}
+        alt={`${student.name} - ${student.company}`}
         className="placement-student-image"
       />
 
@@ -387,7 +402,7 @@ function PlacementCard({
 
         <div
           className={`placement-company ${
-            student.company === "amazon"
+            student.company.toLowerCase() === "amazon"
               ? "amazon-company"
               : ""
           }`}
@@ -403,22 +418,6 @@ function PlacementCard({
 
         <div className="placement-role">
           - {student.role}
-        </div>
-
-        <div className="placement-package-divider"></div>
-
-        <div className="placement-package-label">
-          Salary Package
-        </div>
-
-        <div className="placement-package">
-
-          <strong>
-            ₹{student.package}
-          </strong>
-
-          <span>LPA</span>
-
         </div>
 
       </div>
