@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import Script from "next/script";
 
@@ -23,13 +24,34 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* =========================================
-            META PIXEL
+            GOOGLE ADS TAG
         ========================================= */}
 
         <Script
-          id="meta-pixel"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-849221853"
           strategy="afterInteractive"
-        >
+        />
+
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+              window.dataLayer.push(arguments);
+            }
+
+            window.gtag = gtag;
+
+            gtag('js', new Date());
+            gtag('config', 'AW-849221853');
+          `}
+        </Script>
+
+        {/* =========================================
+            META PIXEL
+        ========================================= */}
+
+        <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
             {
